@@ -6,6 +6,13 @@ GIT
       activesupport (> 3)
       elasticsearch (> 0.4)
       hashie
+    elasticsearch-persistence (0.1.6)
+      activemodel (> 3)
+      activesupport (> 3)
+      elasticsearch (> 0.4)
+      elasticsearch-model (>= 0.1)
+      hashie
+      virtus
     elasticsearch-rails (0.1.6)
 
 GIT
@@ -52,7 +59,13 @@ GEM
       tzinfo (~> 1.1)
     ansi (1.4.3)
     arel (5.0.1.20140414130214)
+    axiom-types (0.1.1)
+      descendants_tracker (~> 0.0.4)
+      ice_nine (~> 0.11.0)
+      thread_safe (~> 0.3, >= 0.3.1)
     builder (3.2.2)
+    coercible (1.0.0)
+      descendants_tracker (~> 0.0.1)
     coffee-rails (4.1.0)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -61,6 +74,9 @@ GEM
       execjs
     coffee-script-source (1.8.0)
     daemons (1.1.9)
+    descendants_tracker (0.0.4)
+      thread_safe (~> 0.3, >= 0.3.1)
+    equalizer (0.0.9)
     erubis (2.7.0)
     eventmachine (1.0.3)
     execjs (2.2.1)
@@ -69,6 +85,7 @@ GEM
     hashie (3.3.1)
     hike (1.2.3)
     i18n (0.6.11)
+    ice_nine (0.11.0)
     jbuilder (2.2.2)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
@@ -145,6 +162,11 @@ GEM
       ansi
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
+    virtus (1.0.3)
+      axiom-types (~> 0.1)
+      coercible (~> 1.0)
+      descendants_tracker (~> 0.0, >= 0.0.3)
+      equalizer (~> 0.0, >= 0.0.9)
 
 PLATFORMS
   ruby
@@ -152,6 +174,7 @@ PLATFORMS
 DEPENDENCIES
   elasticsearch!
   elasticsearch-model!
+  elasticsearch-persistence!
   elasticsearch-rails!
   jbuilder (~> 2.0)
   jquery-rails
